@@ -23,6 +23,7 @@ func initDB() (err error) {
 	return nil
 }
 
+// 定义User类
 type User struct {
 	Id   int64  `db:"id"`
 	Name string `db:"name"`
