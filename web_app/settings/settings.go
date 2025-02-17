@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-// tip 使用viper来管理配置文件
+// Init tip 使用viper来管理配置文件
 func Init() (err error) {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
