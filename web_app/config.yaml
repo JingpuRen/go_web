@@ -16,8 +16,12 @@ mysql:
   user: root
   password: 666666
   dbname: "sqlx_demo"
+  max_open_conns: 200
+  max_idle_conns: 50
 
 redis:
   host: "127.0.0.1"
+  password: ""
   port: 6379
   db: 0
+  pool_size: 100
