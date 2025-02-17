@@ -22,7 +22,7 @@ func Init() (err error) {
 	viper.WatchConfig()
 	// tip 回调参数：当配置改变了的时候，就会触发下面的代码
 	viper.OnConfigChange(func(in fsnotify.Event) {
-		fmt.Printf("Config File is modified ......")
+		fmt.Printf("Config file is modified ......")
 	})
 	return nil
 }
