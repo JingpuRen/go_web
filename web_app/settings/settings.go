@@ -11,7 +11,8 @@ import (
 func Init() (err error) {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("./conf/")
+	// tip : 这个路径中的./表示的是 D:\GoProjects\go_web 这个路径！！！这里一定要注意！！
+	viper.AddConfigPath("./web_app/")
 	err = viper.ReadInConfig()
 	if err != nil {
 		fmt.Printf("viper.ReadInConfig() failed,err:%v\n", err)

@@ -11,7 +11,7 @@ var rdb *redis.Client
 
 func Init() (err error) {
 	rdb = redis.NewClient(&redis.Options{
-		Addr: fmt.Sprintf("&s:&d",
+		Addr: fmt.Sprintf("%s:%d",
 			viper.GetString("redis.host"),
 			viper.GetInt("redis.port")),
 		Password: viper.GetString("redis.password"),
